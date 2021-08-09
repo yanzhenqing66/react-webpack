@@ -4,10 +4,18 @@
 `yarn or npm install`
 
 ## 运行
-`
+```js
 本地开发 yarn start
+```
+```js
 开发环境打包 yarn build:dev
+```
+```js
 测试环境打包 yarn build:test
+```
+```js
 生产环境打包 yarn build
+```
+```js
 （支持自定义运行方式）
-`
+```
