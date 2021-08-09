@@ -1,0 +1,47 @@
+{
+  "name": "react-webpack",
+  "version": "1.0.0",
+  "author": "yan zhenqing",
+  "main": "./src/index.js",
+  "license": "MIT",
+  "description": "使用webpack构建的react-cli，配置了常用的loader已经plugin，而且对于脚手架做了进一步的性能优化",
+  "scripts": {
+    "start": "cross-env NODE_ENV=development webpack-dev-server --progress --colors --config config/webpack.config.dev.js",
+    "build": "cross-env NODE_ENV=production webpack --progress --colors --config config/webpack.config.prod.js",
+    "build:dev": "cross-env NODE_ENV=development webpack --progress --colors --config config/webpack.config.dev.js",
+    "build:test": "cross-env NODE_ENV=test webpack --progress --color --config config/webpack.config.prod.js"
+  },
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.15.0",
+    "@babel/plugin-transform-runtime": "^7.15.0",
+    "@babel/preset-env": "^7.15.0",
+    "@babel/preset-react": "^7.14.5",
+    "@babel/runtime": "^7.14.8",
+    "@babel/runtime-corejs2": "^7.14.8",
+    "autoprefixer": "^9.x",
+    "babel-loader": "^8.2.2",
+    "clean-webpack-plugin": "^4.0.0-alpha.0",
+    "copy-webpack-plugin": "^5.x",
+    "cross-env": "^7.0.3",
+    "css-loader": "^5.2.7",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "4.5.0",
+    "less": "^4.1.1",
+    "less-loader": "^7.3.0",
+    "mini-css-extract-plugin": "^0.9.0",
+    "optimize-css-assets-webpack-plugin": "^6.0.1",
+    "postcss-loader": "^3.0.0",
+    "style-loader": "^2.0.0",
+    "uglifyjs-webpack-plugin": "^2.2.0",
+    "url-loader": "^4.1.1",
+    "webpack": "^4.x",
+    "webpack-bundle-analyzer": "^4.4.2",
+    "webpack-cli": "^3.x",
+    "webpack-dev-server": "^3.11.2",
+    "webpack-merge": "^5.8.0"
+  }
+}
